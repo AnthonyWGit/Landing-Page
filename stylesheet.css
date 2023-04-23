@@ -91,11 +91,26 @@ li
     border-radius: 20px;
     justify-content: space-between;
 }
-.subscribeText > form > label
+.subscribeText > form > input
 {
-    padding: 1.5vh 0 1.5vh 1vh; 
+    border: none;
+    background: transparent;
+    outline: none; 
+    border-radius: 20px;
+    padding: 1vh;
 }
-
+.btn
+{
+    padding: 1.5vh; 
+    border-radius: 20px;
+    background: #3B95BE;
+    border: none;
+    color: white;
+}
+.divBtnSubscribe
+{
+    padding: 1vh;
+}
 
 .subscribeTextPlusImg
 {
