@@ -29,21 +29,32 @@
     flex-direction:row;
     justify-content: space-evenly;
     color: white;
+    align-items: center;
 }
 .marqueNom
 {
     display: flex;
     flex-direction: row;
+    flex-basis: 20%;
+
+}
+.socials
+{
+    display: flex;
+    flex-basis: 20%;
 }
 nav
 {
     display: flex;
     flex-direction: row;
-    padding: 0 5% 0 5%;
+    flex-grow: 1;
+    
 }   
 ul
 {
+    display: flex;
     list-style-type: none;
+
 }
 li
 {
