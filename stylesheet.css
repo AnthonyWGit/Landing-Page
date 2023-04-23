@@ -17,11 +17,18 @@
     flex-wrap: wrap;
     background: linear-gradient(rgb(139, 195, 245), #1294b8);
 }
+.spacer
+{
+    display: flex;
+    flex-grow: 1;
+}
 .pageTop
 {
     display: flex;
-    flex-direction:row;
     flex-grow: 1;
+    flex-direction:row;
+    justify-content: space-evenly;
+    color: white;
 }
 .marqueNom
 {
@@ -32,7 +39,8 @@ nav
 {
     display: flex;
     flex-direction: row;
-}
+    padding: 0 5% 0 5%;
+}   
 ul
 {
     list-style-type: none;
@@ -40,4 +48,5 @@ ul
 li
 {
     display: inline ;
+    padding: 0 1% 0 1%;
 }
