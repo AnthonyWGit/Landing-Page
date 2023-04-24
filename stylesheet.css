@@ -394,4 +394,16 @@ padding: 2vh 0 2vh 0;
 .parallaxTextButton > p
 {
     text-align: center;
+    padding: 1.5vh 0 3vh 0;
+    max-width: 90%;
+}
+.parallaxTextButton > button
+{
+    padding:1vh 4vh;
+    border-radius: 5px;
+    border: none;
+    border: solid white 1px;
+    background: none;
+    color: white;
+    
 }
