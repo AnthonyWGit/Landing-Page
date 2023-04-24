@@ -487,6 +487,10 @@ padding: 2vh 0 2vh 0;
     overflow: hidden;
     color: white;
 }
+.imgCellHover > h3
+{
+    padding-bottom: 2vh;
+}
 .imgCell:hover
 {
     filter: brightness(50%);
@@ -495,9 +499,11 @@ padding: 2vh 0 2vh 0;
 }
 .imgCell:hover .imgCellHover
 {
-    transform: translateX(-50vh);
+    top: 5vh;
+    left: 5vh;
 
 }
+
 .cellDesc
 {
     height: 15vh!important;
