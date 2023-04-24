@@ -219,7 +219,7 @@ padding: 2vh 0 2vh 0;
 .flexcards
 {
     display: grid;
-    grid-template-columns: repeat(3, 45vh);
+    grid-template-columns: repeat(3, 50vh);
     justify-items: center;
     column-gap: 3vh;
     justify-content: center;
@@ -231,7 +231,7 @@ padding: 2vh 0 2vh 0;
     flex-wrap: wrap;
     flex-direction: column;
     background: purple;
-    width: 45vh;
+    width: 50vh;
     height: 45vh;
     border-radius: 30px;
     justify-content: center;
@@ -254,4 +254,5 @@ padding: 2vh 0 2vh 0;
 {
     text-align: center;
     padding: 0 5vh 0 5vh;
+
 }
