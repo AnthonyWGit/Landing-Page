@@ -182,6 +182,7 @@ li:hover
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 4vh;
 }
 .panneau2header > h2
 {
@@ -198,4 +199,11 @@ padding: 2vh 0 2vh 0;
     color: grey;
     -webkit-box-align: center;
     text-align: center;
+}
+
+.flexcard
+{
+    background: purple;
+    width: 60vh;
+    height: 60vh;
 }
