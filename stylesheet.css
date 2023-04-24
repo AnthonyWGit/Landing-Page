@@ -428,11 +428,28 @@ padding: 2vh 0 2vh 0;
     flex-direction: column;
 }
 
+.blogDesc
+{
+    padding: 5vh 0 5vh 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogDesc >p
+{
+    padding-top: 2vh;
+    max-width: 40%;
+    text-align: center;
+    color: grey;
+}
 .blogGrid
 {
     padding: 2vh 0 2vh 0;
     display: grid;
-    grid-template-columns: repeat(3, 30vh);
+    grid-template-columns: repeat(3, 40vh);
     justify-content: center;
     justify-items: center;
     align-content: center;
@@ -444,8 +461,8 @@ padding: 2vh 0 2vh 0;
 {
     display: flex;
     flex-direction: column;
-    height: 30vh;
-    width: 40vh;
+    height: 40vh;
+    width: 50vh;
 }
 .blogGrid >div>img
 {
