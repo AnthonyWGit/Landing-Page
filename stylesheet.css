@@ -294,7 +294,6 @@ padding: 2vh 0 2vh 0;
 }
 .teamGrid > div
 {
-    background: red;
     width: 25vh;
     height: 25vh;
     display: flex;
@@ -314,4 +313,8 @@ padding: 2vh 0 2vh 0;
     height: 20vh;
     filter: grayscale(1);
     border-radius: 50%;
+}
+.descAnna,.descLuke ,.descWilliam,.descMaria
+{
+    justify-content: start !important;
 }
