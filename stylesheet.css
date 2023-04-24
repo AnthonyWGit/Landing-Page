@@ -312,7 +312,6 @@ padding: 2vh 0 2vh 0;
 {
     width: 20vh;
     height: 20vh;
-    filter: grayscale(1);
     border-radius: 50%;
     position: relative;
 }
@@ -321,7 +320,7 @@ padding: 2vh 0 2vh 0;
     justify-content: start !important;
 }
 
-.teamGrid >div> img:hover
+.imgAnna:hover, .imgLuke:hover, .imgWilliam:hover, .imgMaria:hover
 {
     filter: grayscale(0);
     transform:scale(1.2);
@@ -346,9 +345,10 @@ padding: 2vh 0 2vh 0;
 {
     position: relative;
     overflow: hidden;
+    filter: grayscale(1);
 
 }
-.imgAnna>img:hover .annaSocials, .imgWilliam:hover .williamSocials, .imgMaria:hover .mariaSocials, .imgLuke:hover .lukeSocials
+.imgAnna:hover .annaSocials, .imgWilliam:hover .williamSocials, .imgMaria:hover .mariaSocials, .imgLuke:hover .lukeSocials
 {
     transform: translateX(23vh);
     position: absolute;
