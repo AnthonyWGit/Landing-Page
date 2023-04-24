@@ -472,7 +472,31 @@ padding: 2vh 0 2vh 0;
 }
 .imgCell
 {
-    border-radius: 10px;
+    border-radius: 10px;    
+    position: relative;
+    overflow: hidden;
+}
+.imgCellHover
+{
+    position: absolute;
+    left: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50vh;
+    overflow: hidden;
+    color: white;
+}
+.imgCell:hover
+{
+    filter: brightness(50%);
+    transition: 1s;
+    position: relative;
+}
+.imgCell:hover .imgCellHover
+{
+    transform: translateX(-50vh);
+
 }
 .cellDesc
 {
