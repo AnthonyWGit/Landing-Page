@@ -204,7 +204,7 @@ padding: 2vh 0 2vh 0;
 .flexcards
 {
     display: grid;
-    grid-template-columns: repeat(3, 40vh);
+    grid-template-columns: repeat(3, 45vh);
     justify-items: center;
     column-gap: 3vh;
     justify-content: center;
@@ -212,8 +212,31 @@ padding: 2vh 0 2vh 0;
 }
 .flexcard
 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     background: purple;
-    width: 40vh;
-    height: 40vh;
+    width: 45vh;
+    height: 45vh;
     border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.flexcard > i
+{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.flexcard > h2
+{
+    padding: 5vh 0 2vh 0;
+
+}
+.flexcard > p
+{
+    text-align: center;
+    padding: 0 5vh 0 5vh;
 }
