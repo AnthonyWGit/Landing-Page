@@ -407,3 +407,10 @@ padding: 2vh 0 2vh 0;
     color: white;
     
 }
+.parallaxTextButton > button:hover
+{
+    background: white;
+    color : black;
+    transform: translateY(-1vh);
+    transition: 1s;
+}
