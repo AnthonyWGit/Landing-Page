@@ -348,7 +348,7 @@ padding: 2vh 0 2vh 0;
     overflow: hidden;
 
 }
-.imgAnna:hover .annaSocials, .imgWilliam:hover .williamSocials, .imgMaria:hover .mariaSocials, .imgLuke:hover .lukeSocials
+.imgAnna>img:hover .annaSocials, .imgWilliam:hover .williamSocials, .imgMaria:hover .mariaSocials, .imgLuke:hover .lukeSocials
 {
     transform: translateX(23vh);
     position: absolute;
@@ -356,11 +356,42 @@ padding: 2vh 0 2vh 0;
 }
 .parallax
 {
-background-attachment: fixed; /* Fix img while scrolling */
-background-size:cover; /* Img will take 100% of space, crop otherwise */
-background-position: center; /* Center img postion */
-background-repeat: no-repeat; /* Depending on screensize content won't repeat */    
-background-image: url(./img/parallax.png);
-height: 20vh;
-filter: brightness(50%)
+
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+}
+
+.parallax::before
+{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    filter: brightness(50%);
+    background-attachment: fixed; /* Fix img while scrolling */
+    background-size:cover; /* Img will take 100% of space, crop otherwise */
+    background-position: center; /* Center img postion */
+    background-repeat: no-repeat; /* Depending on screensize content won't repeat */    
+    background-image: url(./img/parallax.png);
+}
+.parallaxTextButton
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    position: relative;
+}
+.parallaxTextButton > p
+{
+    text-align: center;
 }
