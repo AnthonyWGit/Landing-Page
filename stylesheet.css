@@ -414,3 +414,53 @@ padding: 2vh 0 2vh 0;
     transform: translateY(-1vh);
     transition: 1s;
 }
+
+.panneau4
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.blogGrid
+{
+    padding: 2vh 0 2vh 0;
+    display: grid;
+    grid-template-columns: repeat(3, 30vh);
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    column-gap: 15vh;
+    row-gap: 1vh;
+}
+.blogGrid >div
+{
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    width: 40vh;
+}
+.blogGrid >div>img
+{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+.imgCell
+{
+    border-radius: 10px;
+}
+.cellDesc
+{
+    height: 15vh!important;
+}
+.blogGrid > div >h3
+{
+    padding-bottom: 2vh;
+}
+.blogGrid > div >p
+{
+    padding-bottom: 1vh;
+    color: grey;
+}
