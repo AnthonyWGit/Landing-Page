@@ -308,3 +308,10 @@ padding: 2vh 0 2vh 0;
 {
     color: grey;
 }
+.teamGrid > div > img
+{
+    width: 20vh;
+    height: 20vh;
+    filter: grayscale(1);
+    border-radius: 50%;
+}
