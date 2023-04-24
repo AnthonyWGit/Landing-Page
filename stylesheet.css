@@ -354,4 +354,13 @@ padding: 2vh 0 2vh 0;
     position: absolute;
     transition: 1.5s;
 }
-
+.parallax
+{
+background-attachment: fixed; /* Fix img while scrolling */
+background-size:cover; /* Img will take 100% of space, crop otherwise */
+background-position: center; /* Center img postion */
+background-repeat: no-repeat; /* Depending on screensize content won't repeat */    
+background-image: url(./img/parallax.png);
+height: 20vh;
+filter: brightness(50%)
+}
