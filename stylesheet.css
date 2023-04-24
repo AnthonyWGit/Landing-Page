@@ -201,9 +201,18 @@ padding: 2vh 0 2vh 0;
     text-align: center;
 }
 
+.flexcards
+{
+    display: grid;
+    grid-template-columns: repeat(3, 40vh);
+    justify-items: center;
+    column-gap: 3vh;
+    justify-content: center;
+    padding-bottom: 4vh;
+}
 .flexcard
 {
     background: purple;
-    width: 60vh;
-    height: 60vh;
+    width: 40vh;
+    height: 40vh;
 }
