@@ -284,8 +284,8 @@ padding: 2vh 0 2vh 0;
 .teamGrid
 {
     display: grid;
-    grid-template-columns: repeat(4, 20vh);
-    grid-template-rows: repeat(3, 20vh);
+    grid-template-columns: repeat(4, 25vh);
+    grid-template-rows: repeat(3, 25vh);
     justify-content: center;
     justify-items: center;
     align-content: center;
@@ -295,6 +295,16 @@ padding: 2vh 0 2vh 0;
 .teamGrid > div
 {
     background: red;
-    width: 15vh;
-    height: 15vh;
+    width: 25vh;
+    height: 25vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.teamGrid > div > p
+{
+    color: grey;
 }
