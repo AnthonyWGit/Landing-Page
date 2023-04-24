@@ -278,4 +278,23 @@ padding: 2vh 0 2vh 0;
     width: 70%;
     text-align: center;
     color: grey;
+    padding: 0 0 5vh 0;
+}
+
+.teamGrid
+{
+    display: grid;
+    grid-template-columns: repeat(4, 20vh);
+    grid-template-rows: repeat(3, 20vh);
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    column-gap: 5vh;
+}
+.teamGrid > div
+{
+    background: red;
+    width: 15vh;
+    height: 15vh;
 }
