@@ -475,6 +475,22 @@ padding: 2vh 0 2vh 0;
     border-radius: 10px;    
     position: relative;
     overflow: hidden;
+    background-size:cover; /* Img will take 100% of space, crop otherwise */
+    background-position: center; /* Center img postion */  
+    background-image: url(./img/blog3.png);
+}
+.imgCell::before
+{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+
+    background-size:cover; /* Img will take 100% of space, crop otherwise */
+    background-position: center; /* Center img postion */  
+    background-image: url(./img/blog3.png);
 }
 .imgCellHover
 {
@@ -493,15 +509,27 @@ padding: 2vh 0 2vh 0;
 }
 .imgCell:hover
 {
-    filter: brightness(50%);
     transition: 1s;
     position: relative;
+    
+}
+.imgCell:hover::before
+{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    filter: brightness(50%);
+    background-size:cover; /* Img will take 100% of space, crop otherwise */
+    background-position: center; /* Center img postion */  
+    background-image: url(./img/blog3.png);   
 }
 .imgCell:hover .imgCellHover
 {
     top: 5vh;
     left: 5vh;
-
 }
 
 .cellDesc
