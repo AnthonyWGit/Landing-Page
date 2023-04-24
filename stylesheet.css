@@ -328,7 +328,7 @@ padding: 2vh 0 2vh 0;
     transition:1s;
     position: relative;
 }
-.annaSocials
+.annaSocials, .mariaSocials, .williamSocials, .lukeSocials
 {
     display: flex;
     flex-wrap: wrap;
@@ -337,18 +337,18 @@ padding: 2vh 0 2vh 0;
     position: absolute;
     left: -20vh;
 }
-.annaSocials > i
+.annaSocials > i, .mariaSocials >i, .williamSocials >i, .lukeSocials>i
 {
     background: white;
     border-radius: 50%;
 }
-.imgAnna
+.imgAnna, .imgLuke, .imgWilliam, .imgMaria
 {
     position: relative;
     overflow: hidden;
 
 }
-.imgAnna:hover .annaSocials
+.imgAnna:hover .annaSocials, .imgWilliam:hover .williamSocials, .imgMaria:hover .mariaSocials, .imgLuke:hover .lukeSocials
 {
     transform: translateX(23vh);
     position: absolute;
