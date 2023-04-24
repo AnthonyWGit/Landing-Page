@@ -158,3 +158,19 @@ li:hover
     padding-top: 2vh;
     padding-bottom: 2vh;
 }
+
+.panneau2
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+
+.panneau2header
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
