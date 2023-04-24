@@ -302,6 +302,7 @@ padding: 2vh 0 2vh 0;
     align-content: center;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .teamGrid > div > p
 {
@@ -313,6 +314,7 @@ padding: 2vh 0 2vh 0;
     height: 20vh;
     filter: grayscale(1);
     border-radius: 50%;
+    position: relative;
 }
 .descAnna,.descLuke ,.descWilliam,.descMaria
 {
@@ -324,11 +326,32 @@ padding: 2vh 0 2vh 0;
     filter: grayscale(0);
     transform:scale(1.2);
     transition:1s;
+    position: relative;
 }
 .annaSocials
 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    gap: 1vh;
+    gap: 2vh;
+    position: absolute;
+    left: -20vh;
 }
+.annaSocials > i
+{
+    background: white;
+    border-radius: 50%;
+}
+.imgAnna
+{
+    position: relative;
+    overflow: hidden;
+
+}
+.imgAnna:hover .annaSocials
+{
+    transform: translateX(23vh);
+    position: absolute;
+    transition: 1.5s;
+}
+
