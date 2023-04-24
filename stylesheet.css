@@ -218,7 +218,7 @@ padding: 2vh 0 2vh 0;
     justify-items: center;
     column-gap: 3vh;
     justify-content: center;
-    padding: 0 2vh 0 2vh;
+    padding-bottom: 5vh;
 
 }
 .flexcard
@@ -362,13 +362,14 @@ padding: 2vh 0 2vh 0;
 .parallax
 {
 
-    height: 30vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content:center;
     align-items: center;
     position: relative;
+
 }
 
 .parallax::before
