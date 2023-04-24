@@ -206,13 +206,8 @@ padding: 2vh 0 2vh 0;
 .panneau2header > p
 {
     word-break:keep-all;
-    display: -webkit-box;   
-    -webkit-line-clamp: 2;   
-    -webkit-box-orient: vertical;     
-    overflow: hidden; 
     font-weight: 200;
     color: grey;
-    -webkit-box-align: center;
     text-align: center;
 }
 
@@ -255,4 +250,32 @@ padding: 2vh 0 2vh 0;
 {
     text-align: center;
     padding: 0 5vh 0 5vh;
+}
+.panneau3
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.panneau3align
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.panneau3align > h1
+{
+    width: 55%;
+    text-align: center;
+    padding-bottom: 2vh;
+}
+
+.panneau3align > p
+{
+    width: 70%;
+    text-align: center;
+    color: grey;
 }
