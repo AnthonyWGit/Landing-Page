@@ -678,6 +678,8 @@ padding: 2em 0 2em 0;
     flex-direction: column;
     flex-wrap: wrap;
     padding-top: 3em;
+    width: 100%;
+    height: 100vh;
 }
 
 .headerPricing
@@ -686,26 +688,26 @@ padding: 2em 0 2em 0;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0 1em 1em 1em;
-    gap: 5vh;
+    gap: 5%;
     align-items: center;
     justify-content: center;
-    
+    height: 39vh;
+    width: 100%;
 }
 .headerPricingText
 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 50%;
-    width: 35%;
+    width: 50%;
 }
 .headerPricingTextCol
 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-bottom: 6vh;
-    gap: 7vh;
+    padding-bottom: 1em;
+    gap: 5em;
 }
 .headerPricingTextCol1, .headerPricingTextCol2
 {
@@ -716,11 +718,11 @@ padding: 2em 0 2em 0;
 
 .headerPricingText> h1
 {
-    padding-bottom: 6vh;
+    padding-bottom: 1em;
 }
 .headerPricingText> p
 {
-    padding-bottom: 6vh;
+    padding-bottom: 1em;
 }
 .pricingImg 
 {
@@ -729,8 +731,8 @@ padding: 2em 0 2em 0;
 }
 .pricingImg >img
 {
-    height: 45vh;
-    width: 65vh;
+    height: 39vh;
+    width: 100%;
 }
 .headerPricingText > p, .headerPricingTextCol1 >p, .headerPricingTextCol2>p
 {
@@ -739,7 +741,7 @@ padding: 2em 0 2em 0;
 .headerPricingText > button
 {
     height: 5vh;
-    width: 15vh;
+    width: 150px;
     border-radius: 10px;
     color: white;
     background: rgb(139, 195, 245);
@@ -752,6 +754,9 @@ padding: 2em 0 2em 0;
     flex-direction: column;
     flex-wrap: wrap;
     background-color: rgba( 128, 128, 128, .15);
+    height: 59vh;
+    width: 100%;
+
 }
 .headerTablePrices
 {
@@ -760,6 +765,8 @@ padding: 2em 0 2em 0;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+
+    width: 100%;
 }
 .headerTablePrices > h1
 {
@@ -767,7 +774,6 @@ padding: 2em 0 2em 0;
 }
 .headerTablePrices >p
 {
-    width: 35%;
     text-align: center;
     color: grey;
     padding-bottom: 5vh;
@@ -775,10 +781,10 @@ padding: 2em 0 2em 0;
 .gridPrices
 {
     display: grid;
-    grid-template-columns: repeat(3,40vh);
-    gap: 4vh;
+    grid-template-columns: repeat(3,30vh);
+    gap: 1.5em;
     justify-content: center;
-    
+
 }
 .cardPrice
 {
@@ -789,10 +795,16 @@ padding: 2em 0 2em 0;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     height: 40vh;
-    width: 40vh;
+    width: 100%;
     justify-content: center;
     align-content: center;
     align-items: center;
+}
+
+.cardPrice:hover
+{
+    transform: translateY(-2vh);
+    transition: 1s;
 }
 .cardPrice > .twoLists> .left
 {
@@ -814,7 +826,7 @@ padding: 2em 0 2em 0;
     flex-direction: row;
     flex-wrap: wrap;
     padding-top: 3vh;
-    gap: 13vh;
+    gap: 1.5em;
 }
 .cardPrice > h4
 {
@@ -822,22 +834,29 @@ padding: 2em 0 2em 0;
     padding-bottom: 3vh;
     display: flex;
     flex-wrap: wrap;
-
 }
-
 .pushButton
 {
-    padding-top: 3vh;
+    padding-top: 0.5em;
+    padding-bottom : 1em;
     display: flex;
     flex-wrap:wrap
 }
-
 .cardPrice > .pushButton > button
 {
-    width: 35vh;
-    height: 5vh;
+    width: 150px;
+    height: 3vh;
     color: white;
     background: rgb(139, 195, 245);
     border: none;
-
+    border-radius: 20px;
+}
+.left > li , .right > li
+{
+    padding: 0.1em 0 0.1em 0;
+}
+.bigNumeric
+{
+    font-size: 3em;
+    color: blue;
 }
