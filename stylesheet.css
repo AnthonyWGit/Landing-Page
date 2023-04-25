@@ -641,6 +641,7 @@ padding: 2vh 0 2vh 0;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    padding-top: 5vh;
 }
 
 .headerPricing
@@ -648,6 +649,10 @@ padding: 2vh 0 2vh 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 0 5vh 0 5vh;
+    gap: 5vh;
+    align-items: center;
+    justify-content: center;
 }
 .headerPricingText
 {
@@ -663,6 +668,7 @@ padding: 2vh 0 2vh 0;
     flex-direction: row;
     flex-wrap: wrap;
     padding-bottom: 6vh;
+    gap: 7vh;
 }
 .headerPricingTextCol1, .headerPricingTextCol2
 {
@@ -686,6 +692,10 @@ padding: 2vh 0 2vh 0;
 }
 .pricingImg >img
 {
-    height: fit-content;
-    width: fit-content;
+    height: 50vh;
+    width: 75vh;
+}
+.headerPricingText
+{
+
 }
