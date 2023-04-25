@@ -84,7 +84,7 @@ ul
     flex-grow: 1;
     justify-content: center;
 }
-li
+.pageTop > nav> ul > li
 {
     display: inline-block;
     padding: 0 1% 0 1%;
@@ -92,7 +92,7 @@ li
 
 }
 
-li:hover
+.pageTop > nav> ul > li:hover
 {
 
     opacity: 0.5;
@@ -660,7 +660,7 @@ padding: 2vh 0 2vh 0;
     flex-direction: column;
     flex-wrap: wrap;
     height: 50%;
-    width: 50%;
+    width: 35%;
 }
 .headerPricingTextCol
 {
@@ -739,11 +739,9 @@ padding: 2vh 0 2vh 0;
 {
     display: grid;
     grid-template-columns: repeat(3,40vh);
-    gap: 2vh;
+    gap: 4vh;
     justify-content: center;
-    justify-items: center;
-    align-content: center;
-    align-items: center;
+    
 }
 .cardPrice
 {
@@ -753,4 +751,48 @@ padding: 2vh 0 2vh 0;
     background-color: white;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    height: 40vh;
+    width: 40vh;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.cardPrice > .twoLists> .left
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.cardPrice > .twoLists > .right
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.twoLists
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 3vh;
+    gap: 13vh;
+}
+.cardPrice > h4
+{
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+.pushButton
+{
+    padding-top: 5vh;
+    display: flex;
+    flex-wrap:wrap
+}
+
+.cardPrice > .pushButton > button
+{
+    width: 35vh;
 }
