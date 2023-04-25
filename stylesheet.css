@@ -96,6 +96,11 @@ ul
     padding: 0 1% 0 1%;
     font-weight: 500;
 }
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
 
 .pageTop > nav> ul > li:hover
 {
