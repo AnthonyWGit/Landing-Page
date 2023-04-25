@@ -692,10 +692,19 @@ padding: 2vh 0 2vh 0;
 }
 .pricingImg >img
 {
-    height: 50vh;
-    width: 75vh;
+    height: 45vh;
+    width: 65vh;
 }
-.headerPricingText
+.headerPricingText > p, .headerPricingTextCol1 >p, .headerPricingTextCol2>p
 {
-
+    color: grey;
+}
+.headerPricingText > button
+{
+    height: 5vh;
+    width: 15vh;
+    border-radius: 10px;
+    color: white;
+    background: rgb(139, 195, 245);
+    border:none;
 }
