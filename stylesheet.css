@@ -18,7 +18,7 @@
     flex-wrap: wrap;
     background: radial-gradient(rgb(139, 195, 245), #1294b8);
     height: 100vh;
-    width: 100vw;
+
 }
 .spacer
 {
@@ -192,7 +192,7 @@ ul
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 100vw;
+
     height: 100vh;
 
 }
@@ -276,7 +276,7 @@ padding: 2em 0 2em 0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 100vw;
+
     height: 100vh;
 }
 .panneau3align
@@ -387,7 +387,7 @@ padding: 2em 0 2em 0;
 }
 .panneauP
 {
-    width: 100%;
+
     height: 30vh;
     display: flex;
     flex-direction: column;
@@ -461,7 +461,7 @@ padding: 2em 0 2em 0;
     flex-wrap: wrap;
     flex-direction: column;
     height: 100vh;
-    width: 100%;
+
 }
 
 .blogDesc
@@ -472,6 +472,7 @@ padding: 2em 0 2em 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height:15vh;
 }
 
 .blogDesc >p
@@ -678,7 +679,7 @@ padding: 2em 0 2em 0;
     flex-direction: column;
     flex-wrap: wrap;
     padding-top: 3em;
-    width: 100%;
+
     height: 100vh;
 }
 
@@ -801,10 +802,10 @@ padding: 2em 0 2em 0;
     align-items: center;
 }
 
-.cardPrice:hover
+.cardPrice.cardPrice.sale
 {
     transform: translateY(-2vh);
-    transition: 1s;
+
 }
 .cardPrice > .twoLists> .left
 {
