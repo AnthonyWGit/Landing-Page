@@ -4,12 +4,16 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-
+html 
+{
+    scroll-behavior:smooth;
+  }
 .wrapper
 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    position: relative;
 }
 .panneau1
 {
@@ -953,4 +957,41 @@ padding: 2em 0 2em 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+.anchor
+{
+    position: absolute;
+    top: 0;
+    right:0;
+    height: 100%;
+  }
+  
+  .anchor::before
+  {
+    content: '';
+    display: block;
+    height: 100vh;
+    pointer-events: none;
+  }
+.anchor > a 
+{
+    position: sticky;
+    top: 88vh;
+    cursor: pointer;
+}
+.anchor > a >button 
+{
+    background: rgba(0, 0, 0,0.1);
+    width: 5vw;
+    height: 5vw;
+    border: none;
+    color: pink;
+    border-radius: 50%;
+    font-size: 2em;
+    cursor: pointer;
+}
+.anchor > a >button>i
+{
+    color: pink;
+    font-size: 1em;
 }
