@@ -109,7 +109,7 @@ ul
     flex-direction: column;
     padding-right: 3vh;
     justify-content: center;
-    width: 25%;
+    width: 40%;
 }
 .subscribeText > h1
 {
@@ -325,7 +325,7 @@ padding: 2em 0 2em 0;
 }
 .teamGrid > div
 {
-    width: 25vw;
+    width: 100%;
     height: 25vh;
     display: flex;
     flex-wrap: wrap;
@@ -341,14 +341,15 @@ padding: 2em 0 2em 0;
 }
 .teamGrid > div > img
 {
-    width: 10vw;
-    height: 20vh;
+    width: 100%;
+    height: 25vh;
     border-radius: 50%;
     position: relative;
 }
 .descAnna,.descLuke ,.descWilliam,.descMaria
 {
     justify-content: start !important;
+    padding-top: 2em;
 }
 
 .imgAnna:hover, .imgLuke:hover, .imgWilliam:hover, .imgMaria:hover
@@ -381,14 +382,14 @@ padding: 2em 0 2em 0;
 }
 .imgAnna:hover .annaSocials, .imgWilliam:hover .williamSocials, .imgMaria:hover .mariaSocials, .imgLuke:hover .lukeSocials
 {
-    transform: translateX(20vw);
+    transform: translateX(10em);
     position: absolute;
     transition: 1.5s;
 }
 .panneauP
 {
 
-    height: 30vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -402,7 +403,7 @@ padding: 2em 0 2em 0;
     justify-content:center;
     align-items: center;
     position: relative;
-    height: 30vh;
+    height: 40vh;
 
 }
 
@@ -689,7 +690,6 @@ padding: 2em 0 2em 0;
     gap: 5%;
     align-items: center;
     justify-content: center;
-    width: 100%;
 }
 .headerPricingText
 {
