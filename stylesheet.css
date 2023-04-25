@@ -366,7 +366,7 @@ padding: 2em 0 2em 0;
     flex-direction: column;
     gap: 2vh;
     position: absolute;
-    left: -20vh;
+    left: -5vw;
 }
 .annaSocials > i, .mariaSocials >i, .williamSocials >i, .lukeSocials>i
 {
@@ -382,7 +382,7 @@ padding: 2em 0 2em 0;
 }
 .imgAnna:hover .annaSocials, .imgWilliam:hover .williamSocials, .imgMaria:hover .mariaSocials, .imgLuke:hover .lukeSocials
 {
-    transform: translateX(10em);
+    transform: translateX(6vw);
     position: absolute;
     transition: 1.5s;
 }
@@ -910,4 +910,47 @@ padding: 2em 0 2em 0;
     justify-content: center;
     align-content: center;
     align-items: center;
+    background: rgba(0, 0, 0,1);
+    padding: 1em 0 1em 0;
+    gap: 1em;
+    color: grey;
+}
+
+.orderIcons
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-evenly;
+}
+.iconz
+{
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 1px;
+    border-radius: 50%;
+    font-size: 1.5em;
+    padding: 0.25em;
+    size: 15px;
+}
+.flexing
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.spaceEvenly
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 60%;
+}
+.spaceEvenly >span
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
