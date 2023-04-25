@@ -708,3 +708,28 @@ padding: 2vh 0 2vh 0;
     background: rgb(139, 195, 245);
     border:none;
 }
+
+.tablePrices
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.headerTablePrices
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.headerTablePrices > h1
+{
+    padding-bottom: 2vh;
+}
+.headerTablePrices >p
+{
+    width: 35%;
+    text-align: center;
+    color: grey;
+}
