@@ -308,10 +308,10 @@ padding: 2em 0 2em 0;
 
 .panneau3align > p
 {
-    width: 70%;
+    width: 75%;
     text-align: center;
     color: grey;
-    padding: 0 0 5em 0;
+    padding: 0 0 2em 0;
 }
 .teamGridFlex
 {
@@ -471,7 +471,7 @@ padding: 2em 0 2em 0;
     flex-wrap: wrap;
     flex-direction: column;
     height: 100vh;
-
+    justify-content: center;
 }
 
 .blogDesc
