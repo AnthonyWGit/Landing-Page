@@ -688,7 +688,7 @@ padding: 2em 0 2em 0;
     flex-direction: column;
     flex-wrap: wrap;
     padding-top: 3em;
-
+    height: 100vh;
 }
 
 .headerPricing
@@ -863,7 +863,7 @@ padding: 2em 0 2em 0;
 .bigNumeric
 {
     font-size: 3em;
-    color: blue;
+    color: #416fc9 ;
 }
 .cardPrice.sale
 {
@@ -919,7 +919,7 @@ padding: 2em 0 2em 0;
     align-content: center;
     align-items: center;
     background: rgba(0, 0, 0,1);
-    padding: 1em 0 1em 0;
+    padding: 2em 0 2em 0;
     gap: 1em;
     color: grey;
 }
