@@ -238,12 +238,14 @@ padding: 2em 0 2em 0;
 
 .flexcards
 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-items: center;
-    column-gap: 1.5em;
+    column-gap: 1em;
     justify-content: center;
     padding-bottom: 2em;
+    width: 100%;
 
 }
 .flexcard
@@ -251,7 +253,7 @@ padding: 2em 0 2em 0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 100%;
+    width: 30%;
     height: 45vh;
     border-radius: 30px;
     justify-content: center;
@@ -314,53 +316,50 @@ padding: 2em 0 2em 0;
     color: grey;
     padding: 0 0 2em 0;
 }
-.teamGridFlex
+.teamlex
 {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     height: 80vh;
-}
-.teamGrid
-{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
     justify-content: center;
-    justify-items: center;
     align-content: center;
-    align-items: center;
-    column-gap: 5em;
 }
-.teamGrid > div
+.headerT
 {
-    width: 100%;
-    height: 25vh;
+    padding-bottom: 1em;
+    justify-content: center;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    position: relative;
 }
-.teamGrid > div > p
+.teamCard
 {
-    color: grey;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 20%;
+    height: 75vh;
+    align-items: center;
 }
-.teamGrid > div > img
+
+.teamCard img
 {
     width: 100%;
-    height: 25vh;
+    height: 100%;
     filter: grayscale(100%);
 }
 .descAnna,.descLuke ,.descWilliam,.descMaria
 {
-    justify-content: start !important;
-    padding-top: 2em;
+    padding-top: 1em;
 }
-
+.teamCard .imgAnna , .teamCard .imgWilliam, .teamCard .imgLuke, .teamCard .imgMaria
+{
+    border-radius: 50%;
+    overflow:hidden;
+}
 .imgAnna:hover img, .imgLuke:hover img, .imgWilliam:hover img, .imgMaria:hover img
 {
     filter: grayscale(0);
@@ -384,14 +383,13 @@ padding: 2em 0 2em 0;
 }
 .imgAnna, .imgLuke, .imgWilliam, .imgMaria
 {
-    width: 100%;
-    height: 25vh;
-    border-radius: 50%;
-    overflow: hidden;
+    width: 13em;
+    height: 13em;
+    position: relative;
 }
 .imgAnna:hover .annaSocials, .imgWilliam:hover .williamSocials, .imgMaria:hover .mariaSocials, .imgLuke:hover .lukeSocials
 {
-    transform: translateX(6vw) translateY(13vh);
+    transform: translateX(6vw) translateY(12vh);
 
     position: absolute;
     transition: 1.5s;
@@ -700,16 +698,17 @@ padding: 2em 0 2em 0;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0 1em 1em 1em;
-    gap: 5%;
-    align-items: center;
+    gap: 1.5%;
     justify-content: center;
+    height: 39vh;
+    width: 100%;
 }
 .headerPricingText
 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 50%;
+    width: 49%;
 }
 .headerPricingTextCol
 {
@@ -717,7 +716,7 @@ padding: 2em 0 2em 0;
     flex-direction: row;
     flex-wrap: wrap;
     padding-bottom: 1em;
-    gap: 5em;
+    gap: 2em;
 }
 .headerPricingTextCol1, .headerPricingTextCol2
 {
@@ -738,10 +737,12 @@ padding: 2em 0 2em 0;
 {
     display: flex;
     flex-wrap: wrap;
+    max-width: 39%;
+    height: 35vh;
 }
 .pricingImg >img
 {
-    height: 39vh;
+    height: 100%;
     width: 100%;
 }
 .headerPricingText > p, .headerPricingTextCol1 >p, .headerPricingTextCol2>p
@@ -750,7 +751,7 @@ padding: 2em 0 2em 0;
 }
 .headerPricingText > button
 {
-    height: 5vh;
+    height: 2.5em;
     width: 150px;
     border-radius: 10px;
     color: white;
@@ -764,10 +765,8 @@ padding: 2em 0 2em 0;
     flex-direction: column;
     flex-wrap: wrap;
     background-color: rgba( 128, 128, 128, .15);
-    padding-bottom: 3em;
-
-
-}
+    padding-bottom: 2em;
+    }
 .headerTablePrices
 {
     display: flex;
@@ -787,13 +786,15 @@ padding: 2em 0 2em 0;
     color: grey;
     padding-bottom: 5vh;
 }
-.gridPrices
+.gridFlexes
 {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 1.5em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
     justify-content: center;
-
+    width: 100%;
+    height: 40vh;
 }
 .cardPrice
 {
@@ -803,10 +804,11 @@ padding: 2em 0 2em 0;
     background-color: white;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-    width: 100%;
+    width: 20%;
     justify-content: center;
     align-content: center;
     align-items: center;
+    height: 40vh;
 }
 
 .cardPrice.cardPrice.sale
@@ -876,11 +878,12 @@ padding: 2em 0 2em 0;
     background-color: white;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-    width: 100%;
+    width: 20%;
     justify-content: center;
     align-content: center;
     align-items: center;
     position: relative;
+    height: 40vh;
 }
 .sticker
 {
@@ -954,6 +957,7 @@ padding: 2em 0 2em 0;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    width: 100%;
 }
 .spaceEvenly
 {
