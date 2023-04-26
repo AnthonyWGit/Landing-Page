@@ -21,8 +21,9 @@ html
     flex-direction: column;
     flex-wrap: wrap;
     background: radial-gradient(rgb(139, 195, 245), #1294b8);
-    height: 100vh;
-    width: 100%;
+    min-height: 100vh;
+    min-width: 100%;
+
 
 }
 .spacer
@@ -120,6 +121,7 @@ a
     padding-right: 3vh;
     justify-content: center;
     width: 40%;
+    min-width: 40%;
 }
 .subscribeText > h1
 {
@@ -136,17 +138,19 @@ a
     background: rgba(255, 255, 255, 0.8);
     border-radius: 50px;
     justify-content: space-between;
+    height: 2.5em;
+    align-items: center;
 }
 .subscribeText > form > input
 {
     border: none;
     background: transparent;
     outline: none; 
-    padding: 1em 0em 1em 3em;
+    padding: 0.5em 0em 0.5em 0.5em;
 }
 .btn
 {
-    padding: 1.5vh 4.5vh 1.5vh 4.5vh; 
+    padding: 0.5rem 1rem 0.25rem 1rem; 
     border-radius: 20px;
     background: #3B95BE;
     border: none;
@@ -162,7 +166,10 @@ a
 }
 .divBtnSubscribe
 {
-    padding: 1em;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0.5em;
+    justify-content: center;
 }
 
 .subscribeTextPlusImg
@@ -185,11 +192,12 @@ a
 {
     display: flex;
     flex-wrap: wrap;
-    width: 40%;
+    width:40%;
+    min-width: 40%;
 }
 .subscribeTextPlusImg > .imgCat >img
 {
-    width: 100%;
+    min-width: 100%;
 }
 .unnamed
 {
@@ -202,8 +210,8 @@ a
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 100%;
-    height: 100vh;
+    min-width: 100%;
+    min-height: 100vh;
 
 }
 
@@ -245,7 +253,7 @@ padding: 2em 0 2em 0;
     column-gap: 1em;
     justify-content: center;
     padding-bottom: 2em;
-    width: 100%;
+    min-width: 100%;
 
 }
 .flexcard
@@ -253,8 +261,9 @@ padding: 2em 0 2em 0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    min-height: 50vh;
+    min-width: 30%;
     width: 30%;
-    height: 45vh;
     border-radius: 30px;
     justify-content: center;
     align-items: center;
@@ -288,8 +297,8 @@ padding: 2em 0 2em 0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 100%;
-    height: 100vh;
+    min-width: 100%;
+    min-height: 100vh;
 }
 .panneau3align
 {
@@ -298,8 +307,8 @@ padding: 2em 0 2em 0;
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    width: 100%;
-    height: 20vh;
+    min-width: 100%;
+    min-height: 20vh;
 }
 
 .panneau3align > h1
@@ -311,7 +320,7 @@ padding: 2em 0 2em 0;
 
 .panneau3align > p
 {
-    width: 75%;
+    min-width: 75%;
     text-align: center;
     color: grey;
     padding: 0 0 2em 0;
@@ -344,7 +353,9 @@ padding: 2em 0 2em 0;
     height: 75vh;
     align-items: center;
 }
-
+.headerT > p{
+    color: grey;;
+}
 .teamCard img
 {
     width: 100%;
@@ -354,6 +365,10 @@ padding: 2em 0 2em 0;
 .descAnna,.descLuke ,.descWilliam,.descMaria
 {
     padding-top: 1em;
+}
+.descAnna >p,.descLuke >p,.descWilliam>p,.descMaria>p
+{
+    color:grey;
 }
 .teamCard .imgAnna , .teamCard .imgWilliam, .teamCard .imgLuke, .teamCard .imgMaria
 {
@@ -383,8 +398,8 @@ padding: 2em 0 2em 0;
 }
 .imgAnna, .imgLuke, .imgWilliam, .imgMaria
 {
-    width: 13em;
-    height: 13em;
+    width: 10em;
+    height: 10em;
     position: relative;
 }
 .imgAnna:hover .annaSocials, .imgWilliam:hover .williamSocials, .imgMaria:hover .mariaSocials, .imgLuke:hover .lukeSocials
@@ -396,8 +411,8 @@ padding: 2em 0 2em 0;
 }
 .panneauP
 {
-    width: 100%;
-    height: 40vh;
+    min-width: 100%;
+    min-height: 40vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -469,8 +484,9 @@ padding: 2em 0 2em 0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 100vh;
-    width: 100%;
+    min-height: 100vh;
+    min-width: 100%;
+    justify-content: center;
 }
 
 .blogDesc
@@ -480,7 +496,7 @@ padding: 2em 0 2em 0;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    height:15vh;
+    min-height:15vh;
 }
 
 .blogDesc >p
@@ -497,8 +513,6 @@ padding: 2em 0 2em 0;
     justify-content: center;
     align-items: center;
     column-gap: 2em;
-    width: 100%;
-    height: 80vh;
     align-items: center;
 }
 .blogFlexCard
@@ -517,8 +531,8 @@ padding: 2em 0 2em 0;
 }
 .imgCell
 {
-    width: 90%;
-    height: 25vh;
+    min-width: 100%;
+    height: 35vh;
     border-radius: 10px;    
     position: relative;
     overflow: hidden;
@@ -529,19 +543,19 @@ padding: 2em 0 2em 0;
 
 .imgCell2
 {
-    width: 100%;
-    height: 25vh;
+    min-width: 100%;
+    height: 35vh;
     border-radius: 10px;    
     position: relative;
     overflow: hidden;
     background-size:cover; /* Img will take 100% of space, crop otherwise */
-    background-position: center; /* Center img postion */  
+    background-position: center; /* Center img postion */   
     background-image: url(./img/blog1.png);
 }
 .imgCell3
 {
-    width: 90%;
-    height: 25vh;
+    min-width: 100%;
+    height: 35vh;
     border-radius: 10px;    
     position: relative;
     overflow: hidden;
@@ -669,18 +683,16 @@ padding: 2em 0 2em 0;
     top: 5vh;
     left: 2.5vw;
 }
-.cellDesc
+
+.cellDesc >h3
 {
-    height: 15vh!important;
+    padding-top: 0.5rem;
+
 }
-.blogGrid > div >h3
+.cellDesc > p
 {
-    padding-bottom: 0.5em;
-}
-.blogGrid > div >p
-{
-    padding-bottom: 0.5em;
     color: grey;
+    padding: .5rem 0 1rem 0;
 }
 .cellDesc > a >p
 {
@@ -692,9 +704,8 @@ padding: 2em 0 2em 0;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding-top: 3em;
-    height: 100vh;
-    width: 100%;
+    min-height: 100vh;
+    min-width: 100%;
 }
 
 .headerPricing
@@ -702,18 +713,18 @@ padding: 2em 0 2em 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0 1em 1em 1em;
     gap: 1.5%;
     justify-content: center;
-    height: 39vh;
-    width: 100%;
+    height: 30vh;
+
 }
 .headerPricingText
 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 49%;
+    min-width: 40%;
+    width : 65%;
 }
 .headerPricingTextCol
 {
@@ -742,12 +753,14 @@ padding: 2em 0 2em 0;
 {
     display: flex;
     flex-wrap: wrap;
-    max-width: 39%;
-    height: 35vh;
+    width: 25%;
+    justify-content: center;
+    height: 14vh;
+
 }
 .pricingImg >img
 {
-    height: 100%;
+    height: auto;
     width: 100%;
 }
 .headerPricingText > p, .headerPricingTextCol1 >p, .headerPricingTextCol2>p
@@ -771,6 +784,7 @@ padding: 2em 0 2em 0;
     flex-wrap: wrap;
     background-color: rgba( 128, 128, 128, .15);
     padding-bottom: 2em;
+    min-height: 70vh;
     }
 .headerTablePrices
 {
@@ -813,7 +827,7 @@ padding: 2em 0 2em 0;
     justify-content: center;
     align-content: center;
     align-items: center;
-    height: 40vh;
+    min-height: 50vh;
 }
 
 .cardPrice.cardPrice.sale
@@ -841,7 +855,7 @@ padding: 2em 0 2em 0;
     flex-direction: row;
     flex-wrap: wrap;
     padding-top: 3vh;
-    gap: 1.5em;
+    gap: .5em;
 }
 .cardPrice > h4
 {
