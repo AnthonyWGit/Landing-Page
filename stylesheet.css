@@ -301,7 +301,7 @@ padding: 2em 0 2em 0;
 
 .panneau3align > h1
 {
-    width: 55%;
+
     text-align: center;
     padding-bottom: 1em;
 }
@@ -476,7 +476,7 @@ padding: 2em 0 2em 0;
 
 .blogDesc
 {
-    padding: 1em 0 1em 0;
+    padding: 1em 0.5em 1em 0.5em;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -493,7 +493,7 @@ padding: 2em 0 2em 0;
 }
 .blogGrid
 {
-    padding: 2em 0 2em 0;
+    padding: 2em 1em 2em 1em;
     display: grid;
     grid-template-columns: repeat(3, 50vh);
     justify-content: center;
@@ -593,7 +593,7 @@ padding: 2em 0 2em 0;
 }
 .titreBlog
 {
-    padding-bottom: 2vh;
+    padding-bottom: 1em;
 }
 .imgCell:hover
 {
@@ -652,17 +652,17 @@ padding: 2em 0 2em 0;
 .imgCell:hover .imgCellHover
 {
     top: 5vh;
-    left: 5vh;
+    left: 2.5vw;
 }
 .imgCell2:hover .imgCellHover
 {
     top: 5vh;
-    left: 5vh;
+    left: 2.5vw;
 }
 .imgCell3:hover .imgCellHover
 {
     top: 5vh;
-    left: 5vh;
+    left: 2.5vw;
 }
 .cellDesc
 {
@@ -688,7 +688,6 @@ padding: 2em 0 2em 0;
     flex-direction: column;
     flex-wrap: wrap;
     padding-top: 3em;
-    height: 100vh;
     padding-bottom: 10em;
 }
 
@@ -788,7 +787,7 @@ padding: 2em 0 2em 0;
 .gridPrices
 {
     display: grid;
-    grid-template-columns: repeat(3,30vh);
+    grid-template-columns: repeat(3,35vh);
     gap: 1.5em;
     justify-content: center;
 
