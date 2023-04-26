@@ -988,18 +988,17 @@ padding: 2em 0 2em 0;
 }
 .anchor > a >button 
 {
-    background: rgba(0, 0, 0,0.1);
-    width: 5vw;
-    height: 7.5vh;
+    background: rgba(0, 0, 0,1);
+    width: 1.5em;
+    height: 1.5em;
     border: none;
-    color: pink;
     border-radius: 50%;
     font-size: 2em;
     cursor: pointer;
 }
 .anchor > a >button>i
 {
-    color: pink;
+    color: white;
     font-size: 1em;
 }
 
