@@ -1087,5 +1087,8 @@ text-align: center;
 @media screen and (max-width: 280px)
 {
     .spaceEvenly
+    {
+        flex-direction: column;
+    }
     
 }
